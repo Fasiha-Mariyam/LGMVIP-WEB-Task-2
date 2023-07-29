@@ -45,7 +45,7 @@ button{
     background: transparent;
     color: white;
     cursor: pointer;
-    box-shadow: 5px 5px 5px rgb(44, 43, 43,0.9);
+    box-shadow: 5px 5px 5px rgba(56, 55, 55, 0.9);
 }
 .sign{
     background: rgb(83, 80, 80);
