@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icon1.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="showInput">
+           <div>
+            <button class="sign" onclick="clearScreen()">AC</button>
+            <button class="sign" onclick="deleteNum()">DEL</button>
+            <button class="sign" onclick="getInput('&#40')">&#40</button>
+            <button class="sign" onclick="getInput('&#41')">&#41</button>
+           </div>
+            <div>
+            <button onclick="getInput('7')">7</button>
+            <button onclick="getInput('8')">8</button>
+            <button onclick="getInput('9')">9</button>
+            <button class="sign" onclick="getInput('*')">*</button>
+            </div>
+            <div>
+            <button onclick="getInput('4')">4</button>
+            <button onclick="getInput('5')">5</button>
+            <button onclick="getInput('6')">6</button>
+            <button class="sign" onclick="getInput('-')">-</button>
+            </div>
+            <div>
+            <button onclick="getInput('1')">1</button>
+            <button onclick="getInput('2')">2</button>
+            <button onclick="getInput('3')">3</button>
+            <button class="sign" onclick="getInput('+')">+</button>
+            </div>
+            <div>
+            <button onclick="getInput('0')">0</button>
+            <button onclick="getInput('.')">.</button>
+            <button id="equalsign" onclick="getOutput()">=</button>
+            <button onclick="getInput('/')" class="sign">/</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
